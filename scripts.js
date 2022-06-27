@@ -20,6 +20,9 @@ function makeGrid(w) {
         newDiv.style.height = boxSize + 'px';
         newDiv.style.width = boxSize + 'px';
 
+        // event listener for drawing: 
+        newDiv.addEventListener('mouseover', colorSquare);
+
         container.appendChild(newDiv);
     }
 }
@@ -33,4 +36,11 @@ function changeResolution() {
     }
     
     makeGrid(newRes);
+}
+
+// drawing function: 
+function colorSquare(e) {
+    const targetSquare = e.target;
+
+    targetSquare.classList.add('colored');
 }

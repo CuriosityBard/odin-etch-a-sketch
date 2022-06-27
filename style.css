@@ -5,8 +5,8 @@ div.pixel {
 
     margin: 0;
 }
-div.pixel:hover {
-    background-color: black;
+div.pixel.colored {
+    background-color: #333;
 }
 
 section#canvas {
