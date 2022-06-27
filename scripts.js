@@ -32,6 +32,7 @@ function makeGrid(w) {
 
         // event listener for drawing: 
         newDiv.addEventListener('mouseenter', colorSquare);
+        newDiv.addEventListener('touchstart', colorSquare);
 
         container.appendChild(newDiv);
     }
