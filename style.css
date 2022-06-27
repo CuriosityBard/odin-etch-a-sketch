@@ -1,12 +1,15 @@
 div.pixel {
     box-sizing: border-box;
-    
+
     border: solid 2px black;
 
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 
     margin: 0;
+}
+div.pixel:hover {
+    background-color: black;
 }
 
 section#canvas {
