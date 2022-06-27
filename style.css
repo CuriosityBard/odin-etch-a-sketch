@@ -1,0 +1,16 @@
+div.pixel {
+    border: solid 2px black;
+
+    width: 30px;
+    height: 30px;
+
+    margin: 0;
+}
+
+section#canvas {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+
+    width: fit-content;
+}
