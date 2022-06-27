@@ -3,9 +3,6 @@ div.pixel {
 
     border: solid 2px black;
 
-    width: 40px;
-    height: 40px;
-
     margin: 0;
 }
 div.pixel:hover {
@@ -14,8 +11,6 @@ div.pixel:hover {
 
 section#canvas {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
 
     width: fit-content;
 }
