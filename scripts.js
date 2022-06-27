@@ -3,8 +3,18 @@ function makeGrid(w) {
     // w = number of squares per side
     const container = document.querySelector('#canvas');
 
+    const vpWidth = document.documentElement.clientWidth;
+    console.log(vpWidth);
+
     // sizing the pixels
-    const boxSize = 640 / w;
+    let boxSize = 640 / w;
+    // sizing for narrow screens
+    if (vpWidth < 650 && vpWidth >= 410) {
+        boxSize = 400 / w;
+    } else if (vpWidth < 410) {
+        boxSize = 300 / w;
+    }
+    console.log(boxSize);
 
     // styling the grid
     const gridTemplate = "1fr ".repeat(w);

@@ -68,3 +68,9 @@ section#canvas {
 
     box-shadow: 10px 10px #A14DA0;
 }
+
+@media only screen and (max-width: 400px) {
+    button {
+        font-size: 1em;
+    }
+}
