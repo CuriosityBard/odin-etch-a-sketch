@@ -6,7 +6,13 @@ div.pixel {
     margin: 0;
 }
 div.pixel.colored {
-    background-color: #333;
+    background-color: #999;
+}
+div.pixel.colored2 {
+    background-color: #555;
+} 
+div.pixel.colored3 {
+    background-color: #111;
 }
 
 section#canvas {

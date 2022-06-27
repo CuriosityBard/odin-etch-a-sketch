@@ -21,7 +21,7 @@ function makeGrid(w) {
         newDiv.style.width = boxSize + 'px';
 
         // event listener for drawing: 
-        newDiv.addEventListener('mouseover', colorSquare);
+        newDiv.addEventListener('mouseenter', colorSquare);
 
         container.appendChild(newDiv);
     }
@@ -41,6 +41,16 @@ function changeResolution() {
 // drawing function: 
 function colorSquare(e) {
     const targetSquare = e.target;
-
-    targetSquare.classList.add('colored');
+   
+    // depending on the darkness of the pixel, darken the pixel
+    if (Array.from(targetSquare.classList).length == 1) {
+        targetSquare.classList.add('colored');
+    } else if (Array.from(targetSquare.classList).toString() == ['pixel', 'colored'].toString()) {
+        targetSquare.classList.remove('colored');
+        targetSquare.classList.add('colored2');
+    } else if (Array.from(targetSquare.classList).toString() == ['pixel', 'colored2'].toString() 
+               || Array.from(targetSquare.classList).toString() === ['pixel', 'colored3'].toString()) {
+        targetSquare.classList.remove('colored2');
+        targetSquare.classList.add('colored3');
+    } 
 }
