@@ -1,4 +1,6 @@
 div.pixel {
+    box-sizing: border-box;
+    
     border: solid 2px black;
 
     width: 30px;
